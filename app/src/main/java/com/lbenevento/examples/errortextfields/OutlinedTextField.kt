@@ -46,14 +46,13 @@ fun OutlinedTextField(
     singleLine: Boolean = false,
     maxLines: Int = Int.MAX_VALUE,
     interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
-    shape: Shape =
-        MaterialTheme.shapes.small.copy(bottomEnd = ZeroCornerSize, bottomStart = ZeroCornerSize),
+    shape: Shape = MaterialTheme.shapes.small,
     colors: TextFieldColors = TextFieldDefaults.textFieldColors()
 ) {
     Column(
         modifier = modifier
     ) {
-        OutlinedTextField(
+        androidx.compose.material.OutlinedTextField(
             value = value,
             onValueChange = onValueChange,
             enabled = enabled,
@@ -124,8 +123,7 @@ fun OutlinedTextField(
     singleLine: Boolean = false,
     maxLines: Int = Int.MAX_VALUE,
     interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
-    shape: Shape =
-        MaterialTheme.shapes.small.copy(bottomEnd = ZeroCornerSize, bottomStart = ZeroCornerSize),
+    shape: Shape = MaterialTheme.shapes.small,
     colors: TextFieldColors = TextFieldDefaults.textFieldColors()
 ) {
 
